@@ -2,55 +2,55 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://alexendros.me/</loc>
-    <lastmod>2026-07-22</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://alexendros.me/now</loc>
-    <lastmod>2026-07-22</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://alexendros.me/espensar</loc>
-    <lastmod>2026-07-22</lastmod>
+    <loc>https://alexendros.me/ideas</loc>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alexendros.me/esposible</loc>
-    <lastmod>2026-07-22</lastmod>
+    <loc>https://alexendros.me/acciones</loc>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://alexendros.me/tags</loc>
-    <lastmod>2026-07-22</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://alexendros.me/legal/aviso-legal</loc>
-    <lastmod>2026-07-22</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
   </url>
   <url>
     <loc>https://alexendros.me/legal/privacidad</loc>
-    <lastmod>2026-07-22</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
   </url>
   <url>
     <loc>https://alexendros.me/legal/cookies</loc>
-    <lastmod>2026-07-22</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
   </url>
   <url>
     <loc>https://alexendros.me/legal/seguridad</loc>
-    <lastmod>2026-07-22</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>

@@ -1,6 +1,6 @@
 {
   "name": "website-alexendrosme",
-  "version": "0.5.0",
+  "version": "0.8.0",
   "private": true,
   "type": "module",
   "description": "Sitio web personal de Alexendros — espacio libre de dinero para ideas, ensayos y crítica tecnológica. Next.js 16, Tailwind v4, TypeScript strict, export estático.",
@@ -80,15 +80,15 @@
     "node": ">=22"
   },
   "packageManager": "npm@10.9.0",
-  "license": "MIT",
+  "license": "CC-BY-NC-SA-4.0",
   "author": "Alexendros <contacto@alexendros.me>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Alexendros/website-alexendrosme.git"
+    "url": "https://github.com/Iniciativas-Alexendros/website-alexendrosme.git"
   },
   "homepage": "https://alexendros.me",
   "bugs": {
-    "url": "https://github.com/Alexendros/website-alexendrosme/issues"
+    "url": "https://github.com/Iniciativas-Alexendros/website-alexendrosme/issues"
   },
   "keywords": [
     "personal-website",

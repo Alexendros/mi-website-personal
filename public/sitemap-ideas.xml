@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://alexendros.me/espensar</loc>
-    <lastmod>2026-07-22</lastmod>
+    <loc>https://alexendros.me/ideas</loc>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alexendros.me/espensar/manifiesto-eligete-a-ti</loc>
+    <loc>https://alexendros.me/ideas/manifiesto-eligete-a-ti</loc>
     <lastmod>2026-07-07T00:00:00Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://alexendros.me/espensar/manifiesto-eligete-a-ti/opengraph-image.png</image:loc>
+      <image:loc>https://alexendros.me/ideas/manifiesto-eligete-a-ti/opengraph-image.png</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://alexendros.me/espensar/soberania-digital</loc>
+    <loc>https://alexendros.me/ideas/soberania-digital</loc>
     <lastmod>2026-06-20T10:00:00Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://alexendros.me/espensar/soberania-digital/opengraph-image.png</image:loc>
+      <image:loc>https://alexendros.me/ideas/soberania-digital/opengraph-image.png</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://alexendros.me/espensar/critica-tecnologica</loc>
+    <loc>https://alexendros.me/ideas/critica-tecnologica</loc>
     <lastmod>2026-06-15T14:30:00Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://alexendros.me/espensar/critica-tecnologica/opengraph-image.png</image:loc>
+      <image:loc>https://alexendros.me/ideas/critica-tecnologica/opengraph-image.png</image:loc>
     </image:image>
   </url>
 </urlset>

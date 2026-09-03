@@ -9,14 +9,14 @@ export const metadata: Metadata = {
 };
 
 export default async function Home() {
-  const [espensar, esposible] = await Promise.all([
-    getContentCollection("espensar"),
-    getContentCollection("esposible"),
+  const [ideas, acciones] = await Promise.all([
+    getContentCollection("ideas"),
+    getContentCollection("acciones"),
   ]);
 
   const latestArticles = [
-    ...espensar.slice(0, 3).map((item) => ({ ...item, type: "espensar" as const })),
-    ...esposible.slice(0, 3).map((item) => ({ ...item, type: "esposible" as const })),
+    ...ideas.slice(0, 3).map((item) => ({ ...item, type: "ideas" as const })),
+    ...acciones.slice(0, 3).map((item) => ({ ...item, type: "acciones" as const })),
   ].sort((a, b) => new Date(b.frontmatter.date).getTime() - new Date(a.frontmatter.date).getTime());
 
   return <HomeContent latestArticles={latestArticles} years={{ misionYear: "2024–" }} />;

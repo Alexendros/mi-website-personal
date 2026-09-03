@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Es pensar · Alexendros</title>
-  <link href="https://alexendros.me/espensar" />
-  <id>https://alexendros.me/espensar</id>
-  <updated>2026-07-21T03:46:47.268Z</updated>
-  <subtitle>Es pensar — Espacio de Alexendros sobre soberanía digital, privacidad, software libre y crítica tecnológica. Descubre ensayos, guías y provocaciones desde Valencia.</subtitle>
+  <title>Ideas · Alexendros</title>
+  <link href="https://alexendros.me/ideas" />
+  <id>https://alexendros.me/ideas</id>
+  <updated>2026-09-03T18:35:30.139Z</updated>
+  <subtitle>Ideas — Espacio de Alexendros sobre soberanía digital, privacidad, software libre y crítica tecnológica. Descubre ensayos, guías y provocaciones desde Valencia.</subtitle>
   <entry>
     <title>Manifiesto “¡Elígete a ti!”</title>
-    <link href="https://alexendros.me/espensar/manifiesto-eligete-a-ti" />
-    <id>https://alexendros.me/espensar/manifiesto-eligete-a-ti</id>
+    <link href="https://alexendros.me/ideas/manifiesto-eligete-a-ti" />
+    <id>https://alexendros.me/ideas/manifiesto-eligete-a-ti</id>
     <updated>2026-07-07T00:00:00.000Z</updated>
     <summary>Un manifiesto sobre la identidad como programa autónomo: por qué elegimos quién somos, cómo reconstruirnos y por qué la tecnología puede ser una extensión de la voluntad soberana.</summary>
   </entry>
   <entry>
     <title>La soberanía digital no es opcional</title>
-    <link href="https://alexendros.me/espensar/soberania-digital" />
-    <id>https://alexendros.me/espensar/soberania-digital</id>
+    <link href="https://alexendros.me/ideas/soberania-digital" />
+    <id>https://alexendros.me/ideas/soberania-digital</id>
     <updated>2026-06-20T10:00:00.000Z</updated>
     <summary>Por qué recuperar el control de tu infraestructura digital es un acto de libertad, no solo técnica.</summary>
   </entry>
   <entry>
     <title>Crítica tecnológica: más allá del ludismo</title>
-    <link href="https://alexendros.me/espensar/critica-tecnologica" />
-    <id>https://alexendros.me/espensar/critica-tecnologica</id>
+    <link href="https://alexendros.me/ideas/critica-tecnologica" />
+    <id>https://alexendros.me/ideas/critica-tecnologica</id>
     <updated>2026-06-15T14:30:00.000Z</updated>
     <summary>Rechazar la tecnología por sistema es tan ingenuo como adoptarla sin pensar. La crítica honesta exige matices.</summary>
   </entry>

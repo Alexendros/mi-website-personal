@@ -5,6 +5,12 @@
 > cuerpo histórico de este documento (foto del análisis 2026-06-07) deben leerse
 > como `alexendros.dev`. El sitio en producción ya está unificado a `.dev`.
 
+> **Actualización 2026-09-03 (v0.8.0)**: las colecciones planificadas en este
+> plan se renombraron en producción: `/espensar` → **`/ideas`** y `/esposible` →
+> **`/acciones`** (con redirecciones 308 en `vercel.json`). El plan se ejecutó en
+> v0.5.0–v0.8.0; las referencias a `espensar`/`esposible` en el cuerpo histórico
+> deben leerse como `ideas`/`acciones`.
+
 > **Decisión canónica**: [`docs/adr/0002-reconversion-me-antidinero.md`](adr/0002-reconversion-me-antidinero.md)
 > (formato MADR 4.0.0, según `CONTRIBUTING.md` §14-15). Este documento es el
 > **plan operativo de detalle** que acompaña al ADR: inventario de purga línea a

@@ -8,48 +8,48 @@ import { ArticleMeta } from "@/components/article-meta";
 import { ArticleToc } from "@/components/article-toc";
 import { extractToc } from "@/lib/content/toc";
 import { siteConfig } from "@/lib/site";
-import { BackEspensarLabel } from "@/components/translated-labels";
+import { BackIdeasLabel } from "@/components/translated-labels";
 
 interface Props {
   params: Promise<{ slug: string }>;
 }
 
 export async function generateStaticParams(): Promise<{ slug: string }[]> {
-  const articles = await getContentCollection("espensar");
+  const articles = await getContentCollection("ideas");
   return articles.map((article) => ({ slug: article.slug }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
-  const article = await getRawContent("espensar", slug);
+  const article = await getRawContent("ideas", slug);
 
   if (!article) return {};
 
   return {
     title: article.frontmatter.title,
     description: article.frontmatter.description ?? article.frontmatter.title,
-    alternates: { canonical: `/espensar/${slug}` },
+    alternates: { canonical: `/ideas/${slug}` },
     openGraph: {
       title: `${article.frontmatter.title} · Alexendros`,
       description: article.frontmatter.description ?? article.frontmatter.title,
       type: "article",
       publishedTime: article.frontmatter.date,
       tags: article.frontmatter.tags,
-      url: `${siteConfig.url}/espensar/${slug}`,
-      images: [`${siteConfig.url}/espensar/${slug}/opengraph-image.png`],
+      url: `${siteConfig.url}/ideas/${slug}`,
+      images: [`${siteConfig.url}/ideas/${slug}/opengraph-image.png`],
     },
     twitter: {
       card: "summary_large_image",
       title: `${article.frontmatter.title} · Alexendros`,
       description: article.frontmatter.description ?? article.frontmatter.title,
-      images: [`${siteConfig.url}/espensar/${slug}/opengraph-image.png`],
+      images: [`${siteConfig.url}/ideas/${slug}/opengraph-image.png`],
     },
   };
 }
 
-export default async function EsPensarArticle({ params }: Props) {
+export default async function IdeasArticle({ params }: Props) {
   const { slug } = await params;
-  const article = await getRawContent("espensar", slug);
+  const article = await getRawContent("ideas", slug);
 
   if (!article) notFound();
 
@@ -71,10 +71,10 @@ export default async function EsPensarArticle({ params }: Props) {
       name: siteConfig.name,
       url: siteConfig.url,
     },
-    url: `${siteConfig.url}/espensar/${slug}`,
+    url: `${siteConfig.url}/ideas/${slug}`,
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `${siteConfig.url}/espensar/${slug}`,
+      "@id": `${siteConfig.url}/ideas/${slug}`,
     },
   };
 
@@ -87,15 +87,15 @@ export default async function EsPensarArticle({ params }: Props) {
       />
       <BreadcrumbJsonLd
         items={[
-          { name: "Es pensar", href: `${siteConfig.url}/espensar` },
-          { name: article.frontmatter.title, href: `${siteConfig.url}/espensar/${slug}` },
+          { name: "Ideas", href: `${siteConfig.url}/ideas` },
+          { name: article.frontmatter.title, href: `${siteConfig.url}/ideas/${slug}` },
         ]}
       />
 
       <div className="site-shell article-shell">
         <nav className="article-nav">
-          <Link href="/espensar" className="ds-caption back-link">
-            <BackEspensarLabel />
+          <Link href="/ideas" className="ds-caption back-link">
+            <BackIdeasLabel />
           </Link>
         </nav>
 
@@ -117,8 +117,8 @@ export default async function EsPensarArticle({ params }: Props) {
         </div>
 
         <footer className="section-footer">
-          <Link href="/espensar" className="back-link">
-            <BackEspensarLabel />
+          <Link href="/ideas" className="back-link">
+            <BackIdeasLabel />
           </Link>
         </footer>
       </div>

@@ -13,6 +13,6 @@ test("homepage tiene biografía, metadatos y sección de últimos ensayos", asyn
 
   const latest = page.locator("section", { hasText: "Últimos ensayos" });
   await expect(latest).toBeVisible();
-  await expect(latest.locator('a[href="/espensar"]')).toBeVisible();
-  await expect(latest.locator('a[href="/esposible"]')).toBeVisible();
+  await expect(latest.locator('a[href="/ideas"]')).toBeVisible();
+  await expect(latest.locator('a[href="/acciones"]')).toBeVisible();
 });

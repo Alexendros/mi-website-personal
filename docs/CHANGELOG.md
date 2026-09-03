@@ -5,6 +5,16 @@ Para detalle histórico de planes originales, ver git log.
 
 ---
 
+## 2026-09-03 — v0.8.0 · Renombre Ideas y Acciones
+
+Versión unificada v0.8.0. Renombre de las dos colecciones de contenido: `espensar` → `ideas` y `esposible` → `acciones` (carpetas `app/` y `content/`, etiquetas "Ideas"/"Acciones" en ES y EN, slugs de los 5 artículos sin cambios). Redirecciones 308 permanentes en `vercel.json` para las 4 rutas legacy (`/espensar` → `/ideas`, `/espensar/:slug` → `/ideas/:slug`, `/esposible` → `/acciones`, `/esposible/:slug` → `/acciones/:slug`).
+
+- **Código**: tipos (`CollectionType`), loader, `og-image.tsx` (`IDEAS_THEME`/`ACCIONES_THEME`), i18n es/en (`ideasLabel`/`accionesLabel`, `backIdeas`/`backAcciones`, `sectionIdeas`/`sectionAcciones`), `translated-labels.tsx` (`BackIdeasLabel`/`BackAccionesLabel`), `home-content.tsx`, `search-dialog.tsx`, colecciones + `[slug]` + opengraph-image, scripts (`sitemap-ideas.xml`/`sitemap-acciones.xml`, search-index, feeds `feed-ideas.*`/`feed-acciones.*`), `sw.js` precache.
+- **Tests**: `vitest.setup.ts` con mock de `localStorage` para Node 26 (35 tests reparados; 259 passed, CI verde: typecheck, lint, build, verify:vercel).
+- **Licencia**: CC BY-NC-SA 4.0 en `LICENSE` y `package.json` (anticomercial).
+- **Documentación**: ROADMAP/TASKS/ARCHITECTURE/docs-README corregidos y contrastados con el código real.
+- **Notion**: creada la página "Website Alexendros.Me · Espacio libre de dinero" con el método de desarrollo por baterías de preguntas + contraste con la IA de Notion (secciones 🧠 Ideas y ⚡ Acciones).
+
 ## 2026-04-14 — Sesión UX (lotes A/B/C/D) + residuos de consistencia
 
 Cierre de la pasada de identidad visual y accesibilidad sobre la landing. Tres PRs encadenados (#21, #22) más un lote D ligero de contenido.

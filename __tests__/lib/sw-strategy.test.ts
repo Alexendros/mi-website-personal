@@ -18,16 +18,16 @@ describe("SW selectStrategy", () => {
     expect(selectStrategy("/search-index.json", "no-cors")).toBe("static-cache-first");
   });
 
-  it("/espensar with navigate mode → navigation", () => {
-    expect(selectStrategy("/espensar", "navigate")).toBe("navigation");
+  it("/ideas with navigate mode → navigation", () => {
+    expect(selectStrategy("/ideas", "navigate")).toBe("navigation");
   });
 
   it("/ with navigate mode → navigation", () => {
     expect(selectStrategy("/", "navigate")).toBe("navigation");
   });
 
-  it("/espensar without navigate mode → passthrough", () => {
-    expect(selectStrategy("/espensar", "no-cors")).toBe("passthrough");
+  it("/ideas without navigate mode → passthrough", () => {
+    expect(selectStrategy("/ideas", "no-cors")).toBe("passthrough");
   });
 
   it("/sw.js → never-cache (CRITICAL)", () => {

@@ -85,9 +85,9 @@ const es: TranslationDict = {
     },
     publicaciones: {
       title: "Últimos ensayos",
-      desc: "Lo último en {espensarLink} y {esposibleLink}.",
-      espensarLabel: "Es pensar",
-      esposibleLabel: "Es posible",
+      desc: "Lo último en {ideasLink} y {accionesLink}.",
+      ideasLabel: "Ideas",
+      accionesLabel: "Acciones",
       empty: "No hay publicaciones aún.",
     },
     stackMarquee: {
@@ -140,8 +140,8 @@ const es: TranslationDict = {
 
   // ── Article pages ────────────────────────────────────────
   article: {
-    backEspensar: "← Volver a Es pensar",
-    backEsposible: "← Volver a Es posible",
+    backIdeas: "← Volver a Ideas",
+    backAcciones: "← Volver a Acciones",
     tagsLabel: "Etiquetas",
     minutesShort: "min de lectura",
     tocTitle: "En este artículo",
@@ -190,8 +190,8 @@ const es: TranslationDict = {
     placeholder: "Busca en artículos...",
     noResults: 'No se encontraron resultados para "{query}".',
     results: '{count} resultado(s) para "{query}"',
-    sectionEspensar: "Es pensar",
-    sectionEsposible: "Es posible",
+    sectionIdeas: "Ideas",
+    sectionAcciones: "Acciones",
     shortcut: "Buscar (⌘K)",
   },
 

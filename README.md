@@ -5,19 +5,19 @@
 [![Deployed on Vercel](https://img.shields.io/badge/vercel-%23000000?logo=vercel&logoColor=white)](https://alexendros.me)
 [![CI: build · e2e · lhci · a11y · perf](https://img.shields.io/github/actions/workflow/status/Iniciativas-Alexendros/website-alexendrosme/ci.yml?branch=main&logo=github&label=CI&style=flat-square)](https://github.com/Iniciativas-Alexendros/website-alexendrosme/actions/workflows/ci.yml)
 [![Lighthouse](https://img.shields.io/endpoint?url=https%3A%2F%2Fgist.githubusercontent.com%2FAlexendros%2Fff3b2a0e0c6ea0a662af759b1fc5de14%2Fraw%2Flighthouse.json&logo=lighthouse&style=flat)](https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Falexendros.me)
-[![Release: v0.6.0](https://img.shields.io/github/v/release/Iniciativas-Alexendros/website-alexendrosme?logo=github&label=Release&style=flat-square)](https://github.com/Iniciativas-Alexendros/website-alexendrosme/releases)
+[![Release: v0.8.0](https://img.shields.io/github/v/release/Iniciativas-Alexendros/website-alexendrosme?logo=github&label=Release&style=flat-square)](https://github.com/Iniciativas-Alexendros/website-alexendrosme/releases)
 [![Next.js](https://img.shields.io/badge/next.js-16-black?logo=next.js)](https://nextjs.org)
 [![Tailwind CSS](https://img.shields.io/badge/tailwind-4-06b6d4?logo=tailwindcss)](https://tailwindcss.com)
 [![TypeScript](https://img.shields.io/badge/typescript-strict-3178c6?logo=typescript)](https://www.typescriptlang.org)
-[![Tests: 180 passed](https://img.shields.io/badge/tests-180%20passed-44cc11?logo=vitest)](https://github.com/Iniciativas-Alexendros/website-alexendrosme/actions)
-[![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg)](LICENSE)
+[![Tests: 259 passed](https://img.shields.io/badge/tests-259%20passed-44cc11?logo=vitest)](https://github.com/Iniciativas-Alexendros/website-alexendrosme/actions)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-orange.svg)](LICENSE)
 
 ## Qué es
 
 Sitio web personal estático para [alexendros.me](https://alexendros.me). Contenido editorial sobre soberanía digital, crítica tecnológica y alternativas al modelo de plataformas.
 
-- **[Espensar](https://alexendros.me/espensar)** — reflexiones sobre tecnología y sociedad
-- **[Esposible](https://alexendros.me/esposible)** — guías prácticas de alternativas
+- **[Ideas](https://alexendros.me/ideas)** — reflexiones sobre tecnología y sociedad
+- **[Acciones](https://alexendros.me/acciones)** — guías prácticas de alternativas
 
 ## Stack
 
@@ -35,7 +35,7 @@ Sitio web personal estático para [alexendros.me](https://alexendros.me). Conten
 
 ```bash
 # Clonar
-git clone git@github.com:Alexendros/website-alexendrosme.git
+git clone git@github.com:Iniciativas-Alexendros/website-alexendrosme.git
 cd website-alexendrosme
 
 # Instalar
@@ -61,11 +61,11 @@ npm run typecheck
 ```
 ├── app/                  # App Router (rutas + layouts)
 │   ├── styles/           # CSS: tokens, base, components, prose
-│   ├── espensar/         # Colección: reflexiones
-│   ├── esposible/        # Colección: guías prácticas
+│   ├── ideas/            # Colección: reflexiones
+│   ├── acciones/         # Colección: guías prácticas
 │   └── legal/            # Páginas legales
 ├── components/           # Componentes React (shadcn/ui base)
-├── content/              # MDX (espensar + esposible)
+├── content/              # MDX (ideas + acciones)
 ├── lib/                  # Utilidades (cn, content loader, schemas)
 ├── public/               # Assets estáticos
 ├── DESIGN.md             # Sistema de diseño v1
@@ -80,7 +80,7 @@ Tokens con prefijo `--ax-*` para colores, motion, spacing y layout. Triple caden
 
 ## Licencia
 
-[MIT](LICENSE)
+[CC BY-NC-SA 4.0](LICENSE) — Anticomercial: cópialo, úsalo, compártelo. No comercies con ello.
 
 <!-- RELEASE_SECTION_START -->
 <!-- RELEASE_SECTION_END -->

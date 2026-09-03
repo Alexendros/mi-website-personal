@@ -20,16 +20,16 @@ export function BackHomeLabel() {
   return <>{t("collection.backHome")}</>;
 }
 
-/** Renders "← Volver a Es pensar" / "← Back to Es pensar" */
-export function BackEspensarLabel() {
+/** Renders "← Volver a Ideas" / "← Back to Ideas" */
+export function BackIdeasLabel() {
   const { t } = useI18n();
-  return <>{t("article.backEspensar")}</>;
+  return <>{t("article.backIdeas")}</>;
 }
 
-/** Renders "← Volver a Es posible" / "← Back to Es posible" */
-export function BackEsposibleLabel() {
+/** Renders "← Volver a Acciones" / "← Back to Acciones" */
+export function BackAccionesLabel() {
   const { t } = useI18n();
-  return <>{t("article.backEsposible")}</>;
+  return <>{t("article.backAcciones")}</>;
 }
 
 /** Renders the aria-label for tags */
