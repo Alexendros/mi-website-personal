@@ -5,42 +5,42 @@
     <link>https://alexendros.me</link>
     <description>Espacio de Alexendros sobre soberanía digital, privacidad, software libre y crítica tecnológica. Descubre ensayos, guías y provocaciones desde Valencia.</description>
     <language>es</language>
-    <lastBuildDate>Tue, 21 Jul 2026 03:46:47 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 03 Sep 2026 18:35:30 GMT</lastBuildDate>
     <atom:link href="https://alexendros.me/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Manifiesto “¡Elígete a ti!”</title>
-      <link>https://alexendros.me/espensar/manifiesto-eligete-a-ti</link>
+      <link>https://alexendros.me/ideas/manifiesto-eligete-a-ti</link>
       <description>Un manifiesto sobre la identidad como programa autónomo: por qué elegimos quién somos, cómo reconstruirnos y por qué la tecnología puede ser una extensión de la voluntad soberana.</description>
       <pubDate>Tue, 07 Jul 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="true">https://alexendros.me/espensar/manifiesto-eligete-a-ti</guid>
+      <guid isPermaLink="true">https://alexendros.me/ideas/manifiesto-eligete-a-ti</guid>
     </item>
     <item>
       <title>La soberanía digital no es opcional</title>
-      <link>https://alexendros.me/espensar/soberania-digital</link>
+      <link>https://alexendros.me/ideas/soberania-digital</link>
       <description>Por qué recuperar el control de tu infraestructura digital es un acto de libertad, no solo técnica.</description>
       <pubDate>Sat, 20 Jun 2026 10:00:00 GMT</pubDate>
-      <guid isPermaLink="true">https://alexendros.me/espensar/soberania-digital</guid>
+      <guid isPermaLink="true">https://alexendros.me/ideas/soberania-digital</guid>
     </item>
     <item>
       <title>Menos plataformas, más protocolos</title>
-      <link>https://alexendros.me/esposible/protocolos-vs-plataformas</link>
+      <link>https://alexendros.me/acciones/protocolos-vs-plataformas</link>
       <description>Los protocolos son infraestructura abierta. Las plataformas son jardines amurallados. La diferencia es política, no técnica.</description>
       <pubDate>Thu, 18 Jun 2026 09:00:00 GMT</pubDate>
-      <guid isPermaLink="true">https://alexendros.me/esposible/protocolos-vs-plataformas</guid>
+      <guid isPermaLink="true">https://alexendros.me/acciones/protocolos-vs-plataformas</guid>
     </item>
     <item>
       <title>Crítica tecnológica: más allá del ludismo</title>
-      <link>https://alexendros.me/espensar/critica-tecnologica</link>
+      <link>https://alexendros.me/ideas/critica-tecnologica</link>
       <description>Rechazar la tecnología por sistema es tan ingenuo como adoptarla sin pensar. La crítica honesta exige matices.</description>
       <pubDate>Mon, 15 Jun 2026 14:30:00 GMT</pubDate>
-      <guid isPermaLink="true">https://alexendros.me/espensar/critica-tecnologica</guid>
+      <guid isPermaLink="true">https://alexendros.me/ideas/critica-tecnologica</guid>
     </item>
     <item>
       <title>Escape del feudo algorítmico</title>
-      <link>https://alexendros.me/esposible/escape-del-feudo-algoritmico</link>
+      <link>https://alexendros.me/acciones/escape-del-feudo-algoritmico</link>
       <description>Los algoritmos no están diseñados para servirte contenido relevante, sino para maximizar tu tiempo en pantalla. Hay alternativas.</description>
       <pubDate>Wed, 10 Jun 2026 16:00:00 GMT</pubDate>
-      <guid isPermaLink="true">https://alexendros.me/esposible/escape-del-feudo-algoritmico</guid>
+      <guid isPermaLink="true">https://alexendros.me/acciones/escape-del-feudo-algoritmico</guid>
     </item>
   </channel>
 </rss>

@@ -8,48 +8,48 @@ import { ArticleMeta } from "@/components/article-meta";
 import { ArticleToc } from "@/components/article-toc";
 import { extractToc } from "@/lib/content/toc";
 import { siteConfig } from "@/lib/site";
-import { BackEsposibleLabel } from "@/components/translated-labels";
+import { BackAccionesLabel } from "@/components/translated-labels";
 
 interface Props {
   params: Promise<{ slug: string }>;
 }
 
 export async function generateStaticParams(): Promise<{ slug: string }[]> {
-  const articles = await getContentCollection("esposible");
+  const articles = await getContentCollection("acciones");
   return articles.map((article) => ({ slug: article.slug }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
-  const article = await getRawContent("esposible", slug);
+  const article = await getRawContent("acciones", slug);
 
   if (!article) return {};
 
   return {
     title: article.frontmatter.title,
     description: article.frontmatter.description ?? article.frontmatter.title,
-    alternates: { canonical: `/esposible/${slug}` },
+    alternates: { canonical: `/acciones/${slug}` },
     openGraph: {
       title: `${article.frontmatter.title} · Alexendros`,
       description: article.frontmatter.description ?? article.frontmatter.title,
       type: "article",
       publishedTime: article.frontmatter.date,
       tags: article.frontmatter.tags,
-      url: `${siteConfig.url}/esposible/${slug}`,
-      images: [`${siteConfig.url}/esposible/${slug}/opengraph-image.png`],
+      url: `${siteConfig.url}/acciones/${slug}`,
+      images: [`${siteConfig.url}/acciones/${slug}/opengraph-image.png`],
     },
     twitter: {
       card: "summary_large_image",
       title: `${article.frontmatter.title} · Alexendros`,
       description: article.frontmatter.description ?? article.frontmatter.title,
-      images: [`${siteConfig.url}/esposible/${slug}/opengraph-image.png`],
+      images: [`${siteConfig.url}/acciones/${slug}/opengraph-image.png`],
     },
   };
 }
 
-export default async function EsPosibleArticle({ params }: Props) {
+export default async function AccionesArticle({ params }: Props) {
   const { slug } = await params;
-  const article = await getRawContent("esposible", slug);
+  const article = await getRawContent("acciones", slug);
 
   if (!article) notFound();
 
@@ -71,10 +71,10 @@ export default async function EsPosibleArticle({ params }: Props) {
       name: siteConfig.name,
       url: siteConfig.url,
     },
-    url: `${siteConfig.url}/esposible/${slug}`,
+    url: `${siteConfig.url}/acciones/${slug}`,
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `${siteConfig.url}/esposible/${slug}`,
+      "@id": `${siteConfig.url}/acciones/${slug}`,
     },
   };
 
@@ -87,15 +87,15 @@ export default async function EsPosibleArticle({ params }: Props) {
       />
       <BreadcrumbJsonLd
         items={[
-          { name: "Es posible", href: `${siteConfig.url}/esposible` },
-          { name: article.frontmatter.title, href: `${siteConfig.url}/esposible/${slug}` },
+          { name: "Acciones", href: `${siteConfig.url}/acciones` },
+          { name: article.frontmatter.title, href: `${siteConfig.url}/acciones/${slug}` },
         ]}
       />
 
       <div className="site-shell article-shell">
         <nav className="article-nav">
-          <Link href="/esposible" className="ds-caption back-link">
-            <BackEsposibleLabel />
+          <Link href="/acciones" className="ds-caption back-link">
+            <BackAccionesLabel />
           </Link>
         </nav>
 
@@ -117,8 +117,8 @@ export default async function EsPosibleArticle({ params }: Props) {
         </div>
 
         <footer className="section-footer">
-          <Link href="/esposible" className="back-link">
-            <BackEsposibleLabel />
+          <Link href="/acciones" className="back-link">
+            <BackAccionesLabel />
           </Link>
         </footer>
       </div>

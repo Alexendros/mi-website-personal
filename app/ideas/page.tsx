@@ -11,29 +11,29 @@ import {
 } from "@/components/translated-labels";
 
 export const metadata: Metadata = {
-  title: "Es pensar",
+  title: "Ideas",
   description:
     "Reflexiones sobre soberanía digital, crítica tecnológica y filosofía práctica para el siglo XXI.",
-  alternates: { canonical: "/espensar" },
+  alternates: { canonical: "/ideas" },
   openGraph: {
-    title: "Es pensar · Alexendros",
+    title: "Ideas · Alexendros",
     description: "Reflexiones sobre soberanía digital, crítica tecnológica y filosofía práctica.",
-    url: "https://alexendros.me/espensar",
+    url: "https://alexendros.me/ideas",
   },
 };
 
-export default async function EsPensarPage() {
-  const articles = await getContentCollection("espensar");
+export default async function IdeasPage() {
+  const articles = await getContentCollection("ideas");
 
   return (
     <>
-      <BreadcrumbJsonLd items={[{ name: "Es pensar", href: `${siteConfig.url}/espensar` }]} />
+      <BreadcrumbJsonLd items={[{ name: "Ideas", href: `${siteConfig.url}/ideas` }]} />
       <div className="site-shell article-shell">
         <header className="collection-header">
           <p className="ds-label collection-label">
             <CollectionLabel />
           </p>
-          <h1 className="headline">Es pensar</h1>
+          <h1 className="headline">Ideas</h1>
           <p className="prose-lead collection-desc">
             Reflexiones sobre soberanía digital, crítica tecnológica y filosofía práctica para el
             siglo XXI.
@@ -48,7 +48,7 @@ export default async function EsPensarPage() {
           <div className="stack-lg">
             {articles.map((article) => (
               <article key={article.slug}>
-                <Link href={`/espensar/${article.slug}`} className="article-item">
+                <Link href={`/ideas/${article.slug}`} className="article-item">
                   <time dateTime={article.frontmatter.date} className="ds-caption">
                     {new Date(article.frontmatter.date).toLocaleDateString("es-ES", {
                       year: "numeric",

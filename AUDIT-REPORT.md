@@ -3,6 +3,12 @@
 Fecha: 2026-04-12
 Rama: `audit/cleanup-20260412`
 
+> **Auditoría histórica**: describe el estado del repositorio **antes** de la
+> reconversión a espacio libre de dinero (2026-06-25) y del renombre de secciones
+> v0.8.0 (2026-09-03). Las rutas `/about`, `/contact`, `/projects` y `/uses`
+> citadas ya no existen: hoy el sitio es `alexendros.me` con las colecciones
+> `/ideas` y `/acciones`. Consulta `docs/CHANGELOG.md` para la evolución.
+
 ## Estado del build
 
 - TypeScript errors: **0**

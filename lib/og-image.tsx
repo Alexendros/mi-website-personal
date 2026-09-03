@@ -17,7 +17,7 @@ export interface OGTheme {
   muted: string;
 }
 
-export const ESPENSAR_THEME: OGTheme = {
+export const IDEAS_THEME: OGTheme = {
   background: "linear-gradient(135deg, #17130f 0%, #2a2318 100%)",
   accent: "#d9b267",
   title: "#f5f0ea",
@@ -25,7 +25,7 @@ export const ESPENSAR_THEME: OGTheme = {
   muted: "#6b6358",
 };
 
-export const ESPOSIBLE_THEME: OGTheme = {
+export const ACCIONES_THEME: OGTheme = {
   background: "linear-gradient(135deg, #0f1a17 0%, #182620 100%)",
   accent: "#67d9b2",
   title: "#eaf5f0",
@@ -34,7 +34,7 @@ export const ESPOSIBLE_THEME: OGTheme = {
 };
 
 export interface OGImageProps {
-  collection: "espensar" | "esposible";
+  collection: "ideas" | "acciones";
   slug: string;
   theme: OGTheme;
   sectionLabel: string;
@@ -42,8 +42,8 @@ export interface OGImageProps {
 
 /**
  * Genera una ImageResponse OG para un artículo de una colección.
- * Compartido entre app/espensar/[slug]/opengraph-image.tsx
- * y app/esposible/[slug]/opengraph-image.tsx.
+ * Compartido entre app/ideas/[slug]/opengraph-image.tsx
+ * y app/acciones/[slug]/opengraph-image.tsx.
  */
 export async function ogImageResponse({
   collection,

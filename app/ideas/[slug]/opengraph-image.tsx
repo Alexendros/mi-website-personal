@@ -10,15 +10,15 @@ interface Props {
 }
 
 export async function generateStaticParams(): Promise<{ slug: string }[]> {
-  const articles = await getContentCollection("esposible");
+  const articles = await getContentCollection("ideas");
   return articles.map((a) => ({ slug: a.slug }));
 }
 
-export default async function EsposibleOG({ params }: Props) {
+export default async function IdeasOG({ params }: Props) {
   const { slug } = await params;
-  const article = await getRawContent("esposible", slug);
+  const article = await getRawContent("ideas", slug);
 
-  const title = article?.frontmatter.title ?? "Es posible";
+  const title = article?.frontmatter.title ?? "Ideas";
   const description = article?.frontmatter.description ?? "";
   const date = article?.frontmatter.date
     ? new Date(article.frontmatter.date).toLocaleDateString("es-ES", {
@@ -37,7 +37,7 @@ export default async function EsposibleOG({ params }: Props) {
         flexDirection: "column",
         justifyContent: "space-between",
         padding: "64px 72px",
-        background: "linear-gradient(135deg, #0f1a17 0%, #182620 100%)",
+        background: "linear-gradient(135deg, #17130f 0%, #2a2318 100%)",
         fontFamily: "ui-sans-serif, system-ui, sans-serif",
       }}
     >
@@ -47,7 +47,7 @@ export default async function EsposibleOG({ params }: Props) {
           display: "flex",
           alignItems: "center",
           gap: "12px",
-          color: "#67d9b2",
+          color: "#d9b267",
           fontSize: "20px",
           letterSpacing: "0.08em",
           textTransform: "uppercase",
@@ -55,7 +55,7 @@ export default async function EsposibleOG({ params }: Props) {
       >
         <span>Alexendros</span>
         <span style={{ opacity: 0.4 }}>·</span>
-        <span style={{ opacity: 0.7 }}>Es posible</span>
+        <span style={{ opacity: 0.7 }}>Ideas</span>
       </div>
 
       {/* Main content */}
@@ -71,7 +71,7 @@ export default async function EsposibleOG({ params }: Props) {
           style={{
             fontSize: "56px",
             fontWeight: 700,
-            color: "#eaf5f0",
+            color: "#f5f0ea",
             lineHeight: 1.1,
             letterSpacing: "-0.02em",
             margin: 0,
@@ -83,7 +83,7 @@ export default async function EsposibleOG({ params }: Props) {
           <p
             style={{
               fontSize: "24px",
-              color: "#88a098",
+              color: "#a09888",
               lineHeight: 1.4,
               margin: 0,
             }}
@@ -98,7 +98,7 @@ export default async function EsposibleOG({ params }: Props) {
         style={{
           display: "flex",
           alignItems: "center",
-          color: "#586b63",
+          color: "#6b6358",
           fontSize: "18px",
         }}
       >

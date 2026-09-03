@@ -22,7 +22,7 @@ function stripMarkdown(md: string): string {
 }
 
 async function main() {
-  const collections: CollectionType[] = ["espensar", "esposible"];
+  const collections: CollectionType[] = ["ideas", "acciones"];
   const index: SearchIndexItem[] = [];
 
   for (const type of collections) {

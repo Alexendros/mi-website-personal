@@ -5,6 +5,58 @@ Todos los cambios destacables de este proyecto se documentan en este archivo.
 El formato sigue [Keep a Changelog 1.1.0](https://keepachangelog.com/es-ES/1.1.0/),
 y este proyecto se adhiere a [SemVer 2.0.0](https://semver.org/lang/es/).
 
+## [0.8.0] — 2026-09-03 · Ideas y Acciones
+
+### Cambiado
+
+- **Renombre de colecciones**: `/espensar` → `/ideas` y `/esposible` → `/acciones`. Renombradas las carpetas `app/espensar`→`app/ideas`, `app/esposible`→`app/acciones` (incluidos los subdirectorios `[slug]/` con sus páginas y OG images), `content/espensar`→`content/ideas`, `content/esposible`→`content/acciones`. Etiquetas unificadas a "Ideas" / "Acciones" en ES y EN. Slugs de los 5 artículos sin cambios.
+- **Redirecciones 308** en `vercel.json` para rutas legacy: `/espensar`→`/ideas`, `/espensar/:slug`→`/ideas/:slug`, `/esposible`→`/acciones`, `/esposible/:slug`→`/acciones/:slug`.
+- **Código**: `lib/content/types.ts` (`CollectionType = "ideas" | "acciones"`), `lib/content/loader.ts`, `lib/og-image.tsx` (`IDEAS_THEME`/`ACCIONES_THEME`), i18n `es.ts`/`en.ts` (`ideasLabel`/`accionesLabel`, `backIdeas`/`backAcciones`, `sectionIdeas`/`sectionAcciones`, `{ideasLink}`/`{accionesLink}`), `components/translated-labels.tsx` (`BackIdeasLabel`/`BackAccionesLabel`), `components/home-content.tsx`, `components/search-dialog.tsx`, `app/page.tsx`, páginas de colección y de artículo, `scripts/generate-sitemap.ts` (sitemap-ideas.xml/sitemap-acciones.xml), `scripts/generate-search-index.ts`, `scripts/generate-feeds.ts` (feed-ideas._/feed-acciones._), `public/sw.js` precache.
+- **Licencia**: LICENSE file + `package.json` unificados a **CC BY-NC-SA 4.0** (anticomercial, coherente con el sello €Ç del footer). README actualizado.
+- **Versión**: unificada a `v0.8.0` (package.json, README badge, package-lock.json).
+- **Documentación**: ROADMAP.md, TASKS.md, ARCHITECTURE.md, docs/README.md corregidos y contrastados con el código real.
+
+### Añadido
+
+- **Página de proyecto en Notion** "Website Alexendros.Me · Espacio libre de dinero" en la base de datos de proyectos, con método de desarrollo basado en baterías de preguntas y contraste con la IA de Notion para las secciones 🧠 Ideas y ⚡ Acciones.
+- **vitest.setup.ts**: mock de `localStorage` para compatibilidad con Node 26 (35 tests reparados).
+
+## [0.7.2] — 2026-08-XX · Release automation fixes
+
+### Corregido
+
+- Workflow de release: push del tag solo en rama `main` protegida (`fix push tag only`).
+- `chore(release): v0.7.2`.
+
+## [0.7.1] — 2026-08-XX · Release workflow split
+
+### Cambiado
+
+- Workflow de release dividido en dos jobs: `check-version` + `do-release`.
+- Añadido `upload-artifact` de `out/**`.
+
+## [0.7.0] — 2026-08-XX · Changelog tooling
+
+### Añadido
+
+- `scripts/extract-changelog.sh` para extraer la sección de changelog.
+- Publicación del changelog de release en el README (marcadores `RELEASE_SECTION_START`/`END`).
+
+## [0.6.0] — 2026-08-XX · CI a11y y rendimiento
+
+### Añadido
+
+- Jobs CI de accesibilidad (WCAG contrast) y rendimiento con cobertura 100%.
+- Auto-update de snapshots de regresión visual.
+- `feat`: OG dinámicas (Plan E), print mode (Plan C.3), feeds segmentados por colección, cobertura del content loader.
+- `pr-summary`, badge Lighthouse semanal y plantilla de issue `bug.yml`.
+
+### Cambiado
+
+- ESLint config (worktree, Node 20), `typescript` 6.0.3, `typescript-eslint` 8.65.0, `@vercel/analytics` 2.x, `@types/node` 26.x.
+- CSP: migración de estilos inline a clases CSS.
+- Husky pre-commit + lint-staged + `scripts/validate-action-shas.ts`.
+
 ## [0.5.0] — 2026-07-17 · Auditoría + Magnificación
 
 ### Añadido
@@ -130,6 +182,11 @@ y este proyecto se adhiere a [SemVer 2.0.0](https://semver.org/lang/es/).
 
 - Versión inicial del repositorio con canon de documentación aplicado.
 
+[0.8.0]: https://github.com/Iniciativas-Alexendros/website-alexendrosme/compare/v0.7.2...v0.8.0
+[0.7.2]: https://github.com/Iniciativas-Alexendros/website-alexendrosme/compare/v0.7.1...v0.7.2
+[0.7.1]: https://github.com/Iniciativas-Alexendros/website-alexendrosme/compare/v0.7.0...v0.7.1
+[0.7.0]: https://github.com/Iniciativas-Alexendros/website-alexendrosme/compare/v0.6.0...v0.7.0
+[0.6.0]: https://github.com/Iniciativas-Alexendros/website-alexendrosme/compare/v0.5.0...v0.6.0
 [0.5.0]: https://github.com/Iniciativas-Alexendros/website-alexendrosme/compare/v0.3.0...v0.5.0
 [0.3.0]: https://github.com/Iniciativas-Alexendros/website-alexendrosme/compare/v0.2.0...v0.3.0
 [0.2.0]: https://github.com/Iniciativas-Alexendros/website-alexendrosme/compare/v0.1.0...v0.2.0

@@ -209,12 +209,12 @@ export function HomeContent({ latestArticles, years }: HomeContentProps) {
               dangerouslySetInnerHTML={{
                 __html: t("sections.publicaciones.desc")
                   .replace(
-                    "{espensarLink}",
-                    `<a href="/espensar" class="brand-link">${t("sections.publicaciones.espensarLabel")}</a>`,
+                    "{ideasLink}",
+                    `<a href="/ideas" class="brand-link">${t("sections.publicaciones.ideasLabel")}</a>`,
                   )
                   .replace(
-                    "{esposibleLink}",
-                    `<a href="/esposible" class="brand-link">${t("sections.publicaciones.esposibleLabel")}</a>`,
+                    "{accionesLink}",
+                    `<a href="/acciones" class="brand-link">${t("sections.publicaciones.accionesLabel")}</a>`,
                   ),
               }}
             />

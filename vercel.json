@@ -24,6 +24,18 @@
       "source": "/herramientas",
       "destination": "/#experiencias",
       "permanent": true
+    },
+    { "source": "/espensar", "destination": "/ideas", "permanent": true },
+    {
+      "source": "/espensar/:slug",
+      "destination": "/ideas/:slug",
+      "permanent": true
+    },
+    { "source": "/esposible", "destination": "/acciones", "permanent": true },
+    {
+      "source": "/esposible/:slug",
+      "destination": "/acciones/:slug",
+      "permanent": true
     }
   ],
   "headers": [

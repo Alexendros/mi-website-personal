@@ -11,29 +11,29 @@ import {
 } from "@/components/translated-labels";
 
 export const metadata: Metadata = {
-  title: "Es posible",
+  title: "Acciones",
   description:
     "Guías prácticas, alternativas reales y caminos concretos hacia la soberanía digital y la libertad tecnológica.",
-  alternates: { canonical: "/esposible" },
+  alternates: { canonical: "/acciones" },
   openGraph: {
-    title: "Es posible · Alexendros",
+    title: "Acciones · Alexendros",
     description: "Guías prácticas y alternativas reales hacia la soberanía digital.",
-    url: "https://alexendros.me/esposible",
+    url: "https://alexendros.me/acciones",
   },
 };
 
-export default async function EsPosiblePage() {
-  const articles = await getContentCollection("esposible");
+export default async function AccionesPage() {
+  const articles = await getContentCollection("acciones");
 
   return (
     <>
-      <BreadcrumbJsonLd items={[{ name: "Es posible", href: `${siteConfig.url}/esposible` }]} />
+      <BreadcrumbJsonLd items={[{ name: "Acciones", href: `${siteConfig.url}/acciones` }]} />
       <div className="site-shell article-shell">
         <header className="collection-header">
           <p className="ds-label collection-label">
             <CollectionLabel />
           </p>
-          <h1 className="headline">Es posible</h1>
+          <h1 className="headline">Acciones</h1>
           <p className="prose-lead collection-desc">
             Guías prácticas, alternativas reales y caminos concretos hacia la soberanía digital y la
             libertad tecnológica. No teoría: lo que puedes hacer desde mañana.
@@ -48,7 +48,7 @@ export default async function EsPosiblePage() {
           <div className="stack-lg">
             {articles.map((article) => (
               <article key={article.slug}>
-                <Link href={`/esposible/${article.slug}`} className="article-item">
+                <Link href={`/acciones/${article.slug}`} className="article-item">
                   <time dateTime={article.frontmatter.date} className="ds-caption">
                     {new Date(article.frontmatter.date).toLocaleDateString("es-ES", {
                       year: "numeric",

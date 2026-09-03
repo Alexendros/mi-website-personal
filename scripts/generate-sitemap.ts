@@ -53,17 +53,17 @@ ${entries}
 }
 
 async function main() {
-  const [espensar, esposible] = await Promise.all([
-    getContentCollection("espensar"),
-    getContentCollection("esposible"),
+  const [ideas, acciones] = await Promise.all([
+    getContentCollection("ideas"),
+    getContentCollection("acciones"),
   ]);
 
   // ── Static pages ───────────────────────────────────
   const pages = [
     urlEntry(`${BASE}/`, NOW, "monthly", "1.0"),
     urlEntry(`${BASE}/now`, NOW, "weekly", "0.7"),
-    urlEntry(`${BASE}/espensar`, NOW, "weekly", "0.8"),
-    urlEntry(`${BASE}/esposible`, NOW, "weekly", "0.8"),
+    urlEntry(`${BASE}/ideas`, NOW, "weekly", "0.8"),
+    urlEntry(`${BASE}/acciones`, NOW, "weekly", "0.8"),
     urlEntry(`${BASE}/tags`, NOW, "monthly", "0.6"),
     urlEntry(`${BASE}/legal/aviso-legal`, NOW, "yearly", "0.2"),
     urlEntry(`${BASE}/legal/privacidad`, NOW, "yearly", "0.2"),
@@ -77,53 +77,53 @@ async function main() {
     "utf-8",
   );
 
-  // ── Es pensar ────────────────────────────────────────
+  // ── Ideas ────────────────────────────────────────────
   // Cada artículo tiene su propia OG image generada por next/og
-  // (app/espensar/[slug]/opengraph-image.tsx).
-  const espensarUrls = [
-    urlEntry(`${BASE}/espensar`, NOW, "weekly", "0.8"),
-    ...espensar.map((a) =>
+  // (app/ideas/[slug]/opengraph-image.tsx).
+  const ideasUrls = [
+    urlEntry(`${BASE}/ideas`, NOW, "weekly", "0.8"),
+    ...ideas.map((a) =>
       urlEntryWithImage(
-        `${BASE}/espensar/${a.slug}`,
+        `${BASE}/ideas/${a.slug}`,
         a.frontmatter.date ?? NOW,
         "monthly",
         "0.7",
-        `${BASE}/espensar/${a.slug}/opengraph-image.png`,
+        `${BASE}/ideas/${a.slug}/opengraph-image.png`,
       ),
     ),
   ].join("\n");
 
   await fs.writeFile(
-    path.join(process.cwd(), "public", "sitemap-espensar.xml"),
-    sitemapXml(espensarUrls, true),
+    path.join(process.cwd(), "public", "sitemap-ideas.xml"),
+    sitemapXml(ideasUrls, true),
     "utf-8",
   );
 
-  // ── Es posible ──────────────────────────────────────
-  const esposibleUrls = [
-    urlEntry(`${BASE}/esposible`, NOW, "weekly", "0.8"),
-    ...esposible.map((a) =>
+  // ── Acciones ─────────────────────────────────────────
+  const accionesUrls = [
+    urlEntry(`${BASE}/acciones`, NOW, "weekly", "0.8"),
+    ...acciones.map((a) =>
       urlEntryWithImage(
-        `${BASE}/esposible/${a.slug}`,
+        `${BASE}/acciones/${a.slug}`,
         a.frontmatter.date ?? NOW,
         "monthly",
         "0.7",
-        `${BASE}/esposible/${a.slug}/opengraph-image.png`,
+        `${BASE}/acciones/${a.slug}/opengraph-image.png`,
       ),
     ),
   ].join("\n");
 
   await fs.writeFile(
-    path.join(process.cwd(), "public", "sitemap-esposible.xml"),
-    sitemapXml(esposibleUrls, true),
+    path.join(process.cwd(), "public", "sitemap-acciones.xml"),
+    sitemapXml(accionesUrls, true),
     "utf-8",
   );
 
   // ── Sitemap index ────────────────────────────────
   const index = [
     `<sitemap><loc>${BASE}/sitemap-pages.xml</loc><lastmod>${NOW}</lastmod></sitemap>`,
-    `<sitemap><loc>${BASE}/sitemap-espensar.xml</loc><lastmod>${NOW}</lastmod></sitemap>`,
-    `<sitemap><loc>${BASE}/sitemap-esposible.xml</loc><lastmod>${NOW}</lastmod></sitemap>`,
+    `<sitemap><loc>${BASE}/sitemap-ideas.xml</loc><lastmod>${NOW}</lastmod></sitemap>`,
+    `<sitemap><loc>${BASE}/sitemap-acciones.xml</loc><lastmod>${NOW}</lastmod></sitemap>`,
   ].join("\n");
 
   await fs.writeFile(
@@ -133,7 +133,7 @@ async function main() {
   );
 
   console.log(
-    "Sitemaps generated:\n  public/sitemap.xml (index)\n  public/sitemap-pages.xml\n  public/sitemap-espensar.xml (with images)\n  public/sitemap-esposible.xml (with images)",
+    "Sitemaps generated:\n  public/sitemap.xml (index)\n  public/sitemap-pages.xml\n  public/sitemap-ideas.xml (with images)\n  public/sitemap-acciones.xml (with images)",
   );
 }
 

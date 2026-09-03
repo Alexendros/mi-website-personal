@@ -10,6 +10,12 @@
 > este ADR (registro fechado el 2026-06-07) deben leerse como `alexendros.dev`.
 > El sitio en producción ya está unificado a `.dev`.
 
+> **Actualización 2026-09-03 (v0.8.0)**: las rutas planificadas `/espensar` y
+> `/esposible` se implementaron y posteriormente se renombraron a **`/ideas`** y
+> **`/acciones`** (redirecciones 308 en `vercel.json`). Las fases 2/3/4 del plan
+> original están completadas; el desarrollo de contenido continúa bajo los
+> nombres `ideas`/`acciones`.
+
 > Texto en formato MADR 4.0.0 · https://adr.github.io/madr/
 >
 > Plan operativo de detalle (inventario de purga línea a línea, arquitectura de

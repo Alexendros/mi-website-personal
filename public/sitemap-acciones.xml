@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://alexendros.me/esposible</loc>
-    <lastmod>2026-07-22</lastmod>
+    <loc>https://alexendros.me/acciones</loc>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alexendros.me/esposible/protocolos-vs-plataformas</loc>
+    <loc>https://alexendros.me/acciones/protocolos-vs-plataformas</loc>
     <lastmod>2026-06-18T09:00:00Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://alexendros.me/esposible/protocolos-vs-plataformas/opengraph-image.png</image:loc>
+      <image:loc>https://alexendros.me/acciones/protocolos-vs-plataformas/opengraph-image.png</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://alexendros.me/esposible/escape-del-feudo-algoritmico</loc>
+    <loc>https://alexendros.me/acciones/escape-del-feudo-algoritmico</loc>
     <lastmod>2026-06-10T16:00:00Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://alexendros.me/esposible/escape-del-feudo-algoritmico/opengraph-image.png</image:loc>
+      <image:loc>https://alexendros.me/acciones/escape-del-feudo-algoritmico/opengraph-image.png</image:loc>
     </image:image>
   </url>
 </urlset>

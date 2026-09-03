@@ -9,7 +9,7 @@ import { useI18n } from "@/lib/i18n";
 
 interface SearchIndexItem {
   slug: string;
-  type: "espensar" | "esposible";
+  type: "ideas" | "acciones";
   title: string;
   description: string;
   tags: string[];
@@ -119,8 +119,8 @@ export function SearchDialog({ open, onOpenChange }: SearchDialogProps) {
   };
 
   const scored = results();
-  const espensarResults = scored.filter((r) => r.item.type === "espensar");
-  const esposibleResults = scored.filter((r) => r.item.type === "esposible");
+  const ideasResults = scored.filter((r) => r.item.type === "ideas");
+  const accionesResults = scored.filter((r) => r.item.type === "acciones");
 
   return (
     <DialogPrimitive.Root open={open} onOpenChange={onOpenChange}>
@@ -193,14 +193,14 @@ export function SearchDialog({ open, onOpenChange }: SearchDialogProps) {
               </p>
             )}
 
-            {espensarResults.length > 0 && (
+            {ideasResults.length > 0 && (
               <div className="mb-2">
                 <p className="px-3 py-1.5 text-xs font-mono uppercase tracking-wider text-muted-foreground">
-                  {t("search.sectionEspensar")}
+                  {t("search.sectionIdeas")}
                 </p>
-                {espensarResults.map(({ item }) => (
+                {ideasResults.map(({ item }) => (
                   <button
-                    key={`espensar-${item.slug}`}
+                    key={`ideas-${item.slug}`}
                     type="button"
                     onClick={() => handleSelect(item.slug, item.type)}
                     className={cn(
@@ -236,14 +236,14 @@ export function SearchDialog({ open, onOpenChange }: SearchDialogProps) {
               </div>
             )}
 
-            {esposibleResults.length > 0 && (
+            {accionesResults.length > 0 && (
               <div>
                 <p className="px-3 py-1.5 text-xs font-mono uppercase tracking-wider text-muted-foreground">
-                  {t("search.sectionEsposible")}
+                  {t("search.sectionAcciones")}
                 </p>
-                {esposibleResults.map(({ item }) => (
+                {accionesResults.map(({ item }) => (
                   <button
-                    key={`esposible-${item.slug}`}
+                    key={`acciones-${item.slug}`}
                     type="button"
                     onClick={() => handleSelect(item.slug, item.type)}
                     className={cn(

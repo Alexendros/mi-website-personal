@@ -10,15 +10,15 @@ interface Props {
 }
 
 export async function generateStaticParams(): Promise<{ slug: string }[]> {
-  const articles = await getContentCollection("espensar");
+  const articles = await getContentCollection("acciones");
   return articles.map((a) => ({ slug: a.slug }));
 }
 
-export default async function EspensarOG({ params }: Props) {
+export default async function AccionesOG({ params }: Props) {
   const { slug } = await params;
-  const article = await getRawContent("espensar", slug);
+  const article = await getRawContent("acciones", slug);
 
-  const title = article?.frontmatter.title ?? "Es pensar";
+  const title = article?.frontmatter.title ?? "Acciones";
   const description = article?.frontmatter.description ?? "";
   const date = article?.frontmatter.date
     ? new Date(article.frontmatter.date).toLocaleDateString("es-ES", {
@@ -37,7 +37,7 @@ export default async function EspensarOG({ params }: Props) {
         flexDirection: "column",
         justifyContent: "space-between",
         padding: "64px 72px",
-        background: "linear-gradient(135deg, #17130f 0%, #2a2318 100%)",
+        background: "linear-gradient(135deg, #0f1a17 0%, #182620 100%)",
         fontFamily: "ui-sans-serif, system-ui, sans-serif",
       }}
     >
@@ -47,7 +47,7 @@ export default async function EspensarOG({ params }: Props) {
           display: "flex",
           alignItems: "center",
           gap: "12px",
-          color: "#d9b267",
+          color: "#67d9b2",
           fontSize: "20px",
           letterSpacing: "0.08em",
           textTransform: "uppercase",
@@ -55,7 +55,7 @@ export default async function EspensarOG({ params }: Props) {
       >
         <span>Alexendros</span>
         <span style={{ opacity: 0.4 }}>·</span>
-        <span style={{ opacity: 0.7 }}>Es pensar</span>
+        <span style={{ opacity: 0.7 }}>Acciones</span>
       </div>
 
       {/* Main content */}
@@ -71,7 +71,7 @@ export default async function EspensarOG({ params }: Props) {
           style={{
             fontSize: "56px",
             fontWeight: 700,
-            color: "#f5f0ea",
+            color: "#eaf5f0",
             lineHeight: 1.1,
             letterSpacing: "-0.02em",
             margin: 0,
@@ -83,7 +83,7 @@ export default async function EspensarOG({ params }: Props) {
           <p
             style={{
               fontSize: "24px",
-              color: "#a09888",
+              color: "#88a098",
               lineHeight: 1.4,
               margin: 0,
             }}
@@ -98,7 +98,7 @@ export default async function EspensarOG({ params }: Props) {
         style={{
           display: "flex",
           alignItems: "center",
-          color: "#6b6358",
+          color: "#586b63",
           fontSize: "18px",
         }}
       >

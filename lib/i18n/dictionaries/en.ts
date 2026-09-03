@@ -85,9 +85,9 @@ const en: TranslationDict = {
     },
     publicaciones: {
       title: "Latest essays",
-      desc: "The latest from {espensarLink} and {esposibleLink}.",
-      espensarLabel: "Es pensar",
-      esposibleLabel: "Es posible",
+      desc: "The latest from {ideasLink} and {accionesLink}.",
+      ideasLabel: "Ideas",
+      accionesLabel: "Acciones",
       empty: "No posts yet.",
     },
     stackMarquee: {
@@ -140,8 +140,8 @@ const en: TranslationDict = {
 
   // ── Article pages ────────────────────────────────────────
   article: {
-    backEspensar: "← Back to Es pensar",
-    backEsposible: "← Back to Es posible",
+    backIdeas: "← Back to Ideas",
+    backAcciones: "← Back to Acciones",
     tagsLabel: "Tags",
     minutesShort: "min read",
     tocTitle: "On this page",
@@ -190,8 +190,8 @@ const en: TranslationDict = {
     placeholder: "Search articles...",
     noResults: 'No results found for "{query}".',
     results: '{count} result(s) for "{query}"',
-    sectionEspensar: "Es pensar",
-    sectionEsposible: "Es posible",
+    sectionIdeas: "Ideas",
+    sectionAcciones: "Acciones",
     shortcut: "Search (⌘K)",
   },
 
