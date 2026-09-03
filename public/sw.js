@@ -1,4 +1,4 @@
-/* sw.js — Alexendros.me Service Worker v1
+/* sw.js — Alexendros.me Service Worker v2
  *
  * Estrategia:
  *  - Assets versionados (/_next/static/, /fonts/): cache-first
@@ -10,7 +10,7 @@
  * Mensaje SKIP_WAITING desde cliente para forzar activación inmediata.
  */
 
-const CACHE_VERSION = "v1";
+const CACHE_VERSION = "v2";
 const STATIC_CACHE = `ax-static-${CACHE_VERSION}`;
 const NAV_CACHE = `ax-nav-${CACHE_VERSION}`;
 
